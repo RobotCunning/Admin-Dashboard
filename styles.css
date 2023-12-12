@@ -27,12 +27,112 @@
 }
 
 body {
-    font-family: 'Alegreya', serif;
+    /*font-family: 'Alegreya', serif;*/
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     background-color: var(--offwhite);
 }
 
+/* CSS */
+.topbutton{
+  align-items: center;
+  background-image: linear-gradient(135deg, var(--three) 20%, var(--three));
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 34px;
+  justify-content: center;
+  letter-spacing: .5px;
+  line-height: 1;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+}
+
+.topbutton:active {
+  outline: 0;
+}
+
+.topbutton:hover {
+  outline: 0;
+}
+
+.topbutton{
+  transition: all 200ms;
+}
+
+.topbutton:hover{
+  transform: scale(.9);
+  opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+  .topbutton {
+    font-size: 15px;
+    height: 50px;
+  }
+
+  .topbutton span {
+    line-height: 50px;
+  }
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.searchbar {
+    border-radius: 10px;
+    border: none;
+    width: 60%;
+    height: 20px;
+    background-color: var(--offwhite);
+    padding: 4px;
+}
+
+.searchbutton {
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+    width:  20px;
+    background-image: url(/users/charl/documents/Coding/Github/repos/Admin-Dashboard/images/imgbin_magnifying-glass-icon-search-icon-justice-elements-icon-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--two);
+    transition: all 200ms;
+    padding: 0;
+    margin: 0;
+}
+button{
+    z-index: 1;
+}
+.searchbutton:hover{
+    transform: scale(.9);
+    opacity: 0.75;
+}
+
+.profileicon{
+    height: 30px;
+    width:30px;
+    padding: 0%;
+    margin: 0%;
+}
 .container {
     display: grid;
     /*gap: 10px;*/
@@ -41,12 +141,15 @@ body {
 }
 
 .card{
+    grid-template-rows: 3fr 1fr;
     height: 250px;
     background-color: white;
     border: 2px solid var(--one);
     border-radius: 20px;
-    text-align: center;
     /*box-shadow: 3px 3px 3px var(--dark-blue);*/
+}
+.card > div {
+    grid-row: 2/3;
 }
 .header{
 display: grid;
@@ -58,10 +161,9 @@ font-weight: 400;
 /* border-radius: 20px; */
 background-color: white;
 color: var(--dark-blue);
-box-shadow: 2px 2px 2px  var(--two);
+box-shadow: 0px 2px 0px  var(--two);
 }
 .utility{
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
@@ -71,6 +173,11 @@ box-shadow: 2px 2px 2px  var(--two);
     display: grid;
     align-items: center;
     grid-template-columns: 2fr 1fr;
+}
+.interact{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows: 5fr 0.1fr;
 }
 
 .sidebar {
@@ -89,8 +196,11 @@ align-items: center;
 
 .sidebar ul li{
     list-style-type: none;
-}
 
+}
+.sidebar ul li:hover{
+    transform: scale(1.1);
+}
 
 .logo {
     display: grid;
@@ -114,8 +224,14 @@ align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
     align-items: center;
     background-color: var(--offwhite);
-    box-shadow: inset 0px 2px 2px  var(--two);
+    box-shadow: inset 0px 2px 0px  var(--two);
 }
+
+/*.contentname {
+    grid-column: 1/5;
+    padding: 0;
+    align-content: center;
+}*/
 
 .updatebar{
     display: grid;
@@ -125,14 +241,41 @@ align-items: center;
     /*border-radius: 20px;*/
     align-items: center;
     text-align: center;
-    box-shadow: inset 0px 2px 2px  var(--two);
+    box-shadow: inset 0px 2px 0px  var(--two);
+    /*grid-template-rows: 0.5fr 4fr 0.5fr 4fr;*/
 }
 
-.updatebar div {
+.news, .updates {
     height: 250px;
     background-color: white;
     border-radius: 20px;
     text-align: center;
     border: solid 2px var(--three);
     /*box-shadow: 6px 6px 6px var(--accent);*/
+}
+
+.footer{
+    display: flex;
+    min-width: 100%;
+    margin: auto 0;
+    justify-content:space-around;
+    font-style: normal;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.cardimg {
+    height: 75%;
+    width:70%;
+    grid-row: 1/2;
 }
