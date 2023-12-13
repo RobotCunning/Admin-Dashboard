@@ -160,7 +160,6 @@ button{
 display: grid;
 grid-template-rows: 0.5fr 1.5fr;
 height: 140px;
-color: var(--blue-one);
 font-size: large;
 font-weight: 400;
 /* border-radius: 20px; */
