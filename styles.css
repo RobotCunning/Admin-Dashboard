@@ -275,6 +275,8 @@ a {
 
 .card:hover{
     width: 105%;
-    height: 275px;
+    height: 101%;
     transform: scale(1.01);
+    font-size: 95%;
+    transition: 250ms;
 }
