@@ -30,6 +30,8 @@ body {
     /*font-family: 'Alegreya', serif;*/
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
     background-color: var(--offwhite);
 }
 
@@ -111,7 +113,7 @@ body {
     border: none;
     height: 20px;
     width:  20px;
-    background-image: url(/users/charl/documents/Coding/Github/repos/Admin-Dashboard/images/imgbin_magnifying-glass-icon-search-icon-justice-elements-icon-png.png);
+    background-image: url(../Admin-Dashboard/images/imgbin_magnifying-glass-icon-search-icon-justice-elements-icon.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--two);
