@@ -288,7 +288,7 @@ a {
 }
 
 .card:hover{
-    height: 105%;
-    width: 110%;
+    width: 105%;
+    height: 275px;
     transform: scale(1.01);
 }
