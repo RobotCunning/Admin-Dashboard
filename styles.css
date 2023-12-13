@@ -27,19 +27,17 @@
 }
 
 body {
-    /*font-family: 'Alegreya', serif;*/
     font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
-    min-width: 100vw;
     background-color: var(--offwhite);
+    width:95%;
+    height:100vh;
 }
 
-.example::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
   }
   
-
-  .example {
+body{
     -ms-overflow-style: none; 
     scrollbar-width: none;
   }
@@ -234,7 +232,7 @@ align-items: center;
 .content{
     display: grid;
     gap: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
     align-items: center;
     background-color: var(--offwhite);
 }
