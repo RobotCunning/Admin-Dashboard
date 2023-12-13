@@ -246,6 +246,9 @@ align-items: center;
     text-align: center;
     border: solid 2px var(--three);
 }
+.sidebar a {
+    color: var(--yellow);
+}
 
 a {
     text-decoration: none;
