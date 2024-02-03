@@ -150,7 +150,6 @@ button{
 }
 
 .card{
-    grid-template-rows: 3fr 1fr;
     height: 250px;
     background-color: white;
     border: 2px solid var(--one);
@@ -268,15 +267,12 @@ a {
 .cardimg {
     display: block;
     margin: 0 auto;
-    height: 75%;
+    height: 70%;
     width:70%;
     grid-row: 1/2;
 }
 
 .card:hover{
-    width: 105%;
-    height: 101%;
-    transform: scale(1.01);
-    font-size: 95%;
-    transition: 250ms;
+    border-color: var(--three);
+    box-shadow: 2px 2px 5px var(--two);
 }
